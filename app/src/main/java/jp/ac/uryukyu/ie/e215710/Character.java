@@ -53,18 +53,10 @@ public class Character {
     }
 
     public void injuredKunai(int damageKunai) {
-        hp -= damageKunai ;
-        if (hp <= 0) {
-            death = "死" ;
-            System.out.println(name + "は力尽きた...") ;
-        }
+        
     }
 
     public void injuredShuriken(int damageShuriken) {
-        hp -= damageShuriken ;
-        if (hp <= 0) {
-            death = "死" ;
-            System.out.println(name + "は力尽きた...") ;
-        }
+        
     }
 }

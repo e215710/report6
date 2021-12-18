@@ -14,6 +14,7 @@ public class Enemy extends Character {
         }
     }
 
+    @Override
     public void injuredShuriken(int damageShuriken) {
         hp -= damageShuriken ;
         if (hp <= 0) {

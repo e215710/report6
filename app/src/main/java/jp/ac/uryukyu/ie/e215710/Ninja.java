@@ -13,7 +13,7 @@ public class Ninja extends Character {
             System.out.println(name + "は静かに去っていった") ;
         }
     }
-
+    @Override
     public void injuredShuriken(int damageShuriken) {
         hp -= damageShuriken ;
         if (hp <= 0) {
