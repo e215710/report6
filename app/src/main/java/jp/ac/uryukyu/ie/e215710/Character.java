@@ -22,6 +22,18 @@ public class Character {
         return this.name ;
     }
 
+    public int getHp() {
+        return this.hp ;
+    }
+
+    public int chakra() {
+        return this.chakra ;
+    }
+
+    public int attack() {
+        return this.attack ;
+    }
+
     public String getDeath() {
         return this.death ;
     }
@@ -33,7 +45,7 @@ public class Character {
             System.out.println(name +"は" + cha.getName() + "に" + damageKunai + "ダメージ与えた") ;
             cha.injuredKunai(damageKunai);
             if (cha.hp > 0) {
-                System.out.println(name + "のHPは" + hp + "、" + cha.getName() + "のHPは" + cha.hp) ;
+                System.out.println(name + "のHPは" + hp + "、" + cha.getName() + "のHPは" + cha.getHp()) ;
             }
             System.out.println() ;
         }
@@ -46,7 +58,7 @@ public class Character {
             System.out.println(name +"は" + cha.getName() + "に" + damageShuriken + "ダメージ与えた") ;
             cha.injuredShuriken(damageShuriken);
             if (cha.hp > 0) {
-                System.out.println(name + "のHPは" + hp + "、" + cha.getName() + "のHPは" + cha.hp) ;
+                System.out.println(name + "のHPは" + hp + "、" + cha.getName() + "のHPは" + cha.getHp()) ;
             }
             System.out.println() ;
         }

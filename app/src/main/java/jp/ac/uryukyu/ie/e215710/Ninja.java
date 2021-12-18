@@ -13,12 +13,25 @@ public class Ninja extends Character {
             System.out.println(name + "は静かに去っていった") ;
         }
     }
+
     @Override
     public void injuredShuriken(int damageShuriken) {
         hp -= damageShuriken ;
         if (hp <= 0) {
             death = "死" ;
             System.out.println(name + "は静かに去っていった") ;
+            System.out.println() ;
+        }
+    }
+
+    public void rasengan(Enemy enemy) {
+        int damageRasengan = attack * 2 ;
+        if (hp > 0) {
+            System.out.println(name + "は螺旋丸を発動した！！") ;
+
+            if (enemy.getHp() > 0) {
+                System.out.println(name + "のHPは" + hp + "、" + enemy.getName() + "のHPは" + enemy.getHp()) ;
+            }
             System.out.println() ;
         }
     }
