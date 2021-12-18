@@ -28,7 +28,7 @@ public class Ninja extends Character {
         int damageRasengan = attack * 2 ;
         if (hp > 0) {
             System.out.println(name + "は螺旋丸を発動した！！") ;
-
+            enemy.injuredRasengan(damageRasengan) ;
             if (enemy.getHp() > 0) {
                 System.out.println(name + "のHPは" + hp + "、" + enemy.getName() + "のHPは" + enemy.getHp()) ;
             }

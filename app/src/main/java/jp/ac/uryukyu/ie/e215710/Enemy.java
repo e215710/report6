@@ -22,4 +22,13 @@ public class Enemy extends Character {
             System.out.println(name + "逃げた") ;
         }
     }
+
+    public void injuredRasengan(int damageRasengan) {
+        hp -= damageRasengan ;
+        if (hp <= 0) {
+            death = "死" ;
+            System.out.println(name + "は逃げた") ;
+        }
+    }
+
 }
