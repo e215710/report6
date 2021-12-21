@@ -15,8 +15,13 @@ public class Main {
         while(ninja.getDeath() == "生" && enemy.getDeath()== "生") {
             turn ++ ;
             System.out.println(turn + "ターン目") ;
-            ninja.rasengan(enemy);
+            ninja.rasengan(enemy) ;
             enemy.syuriken(ninja) ;
+
+            turn ++ ;
+            System.out.println(turn + "ターン目") ;
+            ninja.syuriken(enemy) ;
+            enemy.kunai(ninja) ;
         }
         System.out.println("激しい戦いは幕を閉じた") ;
     }
