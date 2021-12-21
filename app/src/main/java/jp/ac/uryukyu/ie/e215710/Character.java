@@ -40,7 +40,7 @@ public class Character {
 
     public void kunai(Character cha) {
         int damageKunai = (int) (attack * 1.2) ;
-        if (hp > 0) {
+        if (hp > 0 && cha.hp > 0) {
             System.out.println(name + "は" + cha.getName() + "にクナイで攻撃した！") ;
             System.out.println(name +"は" + cha.getName() + "に" + damageKunai + "ダメージ与えた") ;
             cha.injuredKunai(damageKunai);
@@ -53,7 +53,7 @@ public class Character {
 
     public void syuriken(Character cha) {
         int damageShuriken = attack ;
-        if (hp > 0) {
+        if (hp > 0 && cha.hp > 0) {
             System.out.println(name + "は" + cha.getName() + "に手裏剣で攻撃した！") ;
             System.out.println(name +"は" + cha.getName() + "に" + damageShuriken + "ダメージ与えた") ;
             cha.injuredShuriken(damageShuriken);

@@ -26,7 +26,7 @@ public class Ninja extends Character {
 
     public void rasengan(Enemy enemy) {
         int damageRasengan = attack * 2 ;
-        if (hp > 0 && chakra > (attack / 2)) {
+        if (hp > 0 && chakra > (attack / 2) && enemy.getHp() > 0) {
             System.out.println(name + "は螺旋丸を出した！！") ;
             enemy.injuredRasengan(damageRasengan) ;
             chakra -=  (attack / 2) ;
