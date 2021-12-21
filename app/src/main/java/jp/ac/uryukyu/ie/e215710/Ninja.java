@@ -39,4 +39,11 @@ public class Ninja extends Character {
             System.out.println(name + "はチャクラ不足で螺旋丸を出すことが出来ない。。") ;
         }
     }
+
+    public void heelChakra(int heel) {
+        chakra += heel ;
+        System.out.println(name + "のチャクラは" + heel + "回復した！") ;
+        System.out.println(name + "のチャクラは" + chakra + "である") ;
+    }
+
 }

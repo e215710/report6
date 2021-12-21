@@ -22,6 +22,9 @@ public class Main {
             System.out.println(turn + "ターン目") ;
             ninja.syuriken(enemy) ;
             enemy.kunai(ninja) ;
+            
+            ninja.heelChakra(10);
+            System.out.println() ;
         }
         System.out.println("激しい戦いは幕を閉じた") ;
     }
