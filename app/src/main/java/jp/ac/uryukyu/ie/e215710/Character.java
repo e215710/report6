@@ -1,11 +1,11 @@
 package jp.ac.uryukyu.ie.e215710;
 
 public class Character {
-    String name ;
-    int hp ;
-    int chakra ;
-    int attack ;
-    String death ;
+    String name ; //キャラクター名
+    int hp ; //HP
+    int chakra ; //チャクラ
+    int attack ; //攻撃力
+    String death ; //生死状態
 
     Character(String name, int hp, int chakra, int attack) {
         this.name = name ;
