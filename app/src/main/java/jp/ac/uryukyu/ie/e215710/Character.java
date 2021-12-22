@@ -26,11 +26,11 @@ public class Character {
         return this.hp ;
     }
 
-    public int chakra() {
+    public int getChakra() {
         return this.chakra ;
     }
 
-    public int attack() {
+    public int getAttack() {
         return this.attack ;
     }
 
