@@ -18,42 +18,92 @@ public class Character {
         System.out.println() ;
     }
 
+    /**
+    * getterメソッド
+    * nameを取得する
+    * @return name
+    */
     public String getName() {
         return this.name ;
     }
 
+    /**
+    * getterメソッド
+    * hpを取得する
+    * @return hp
+    */
     public int getHp() {
         return this.hp ;
     }
 
+    /**
+    * getterメソッド
+    * chakraを取得する
+    * @return chakra
+    */
     public int getChakra() {
         return this.chakra ;
     }
 
+    /**
+    * getterメソッド
+    * attackを取得する
+    * @return attack
+    */
     public int getAttack() {
         return this.attack ;
     }
 
+    /**
+    * getterメソッド
+    * deathを取得する
+    * @return death
+    */
     public String getDeath() {
         return this.death ;
     }
 
+    /**
+    * setterメソッド
+    * nameを変更したい時に使う
+    * @param name
+    */
     public void setName(String name) {
         this.name = name ;
     }
 
+    /**
+    * setterメソッド
+    * hpを変更したい時に使う
+    * @param hp
+    */
     public void setHp(int hp) {
         this.hp = hp ;
     }
 
+    /**
+    * setterメソッド
+    * chakraを変更したい時に使う
+    * @param chakra
+    */
     public void setChakra(int chakra) {
         this.chakra = chakra ;
     }
 
+    /**
+    * setterメソッド
+    * attackを変更したい時に使う
+    * @param attack
+    */
     public void setAttack(int attack) {
         this.attack = attack ;
     }
 
+    /**
+    * setterメソッド
+    * deatheを変更したい時に使う
+    * @param death
+    */
     public void setDeath(String death) {
         this.death = death ;
     }

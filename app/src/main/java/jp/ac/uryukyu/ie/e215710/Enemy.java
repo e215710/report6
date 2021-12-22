@@ -30,5 +30,4 @@ public class Enemy extends Character {
             System.out.println(name + "は逃げた") ;
         }
     }
-
 }
