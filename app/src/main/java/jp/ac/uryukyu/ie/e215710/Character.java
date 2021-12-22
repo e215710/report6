@@ -38,6 +38,26 @@ public class Character {
         return this.death ;
     }
 
+    public void setName(String name) {
+        this.name = name ;
+    }
+
+    public void setHp(int hp) {
+        this.hp = hp ;
+    }
+
+    public void setChakra(int chakra) {
+        this.chakra = chakra ;
+    }
+
+    public void setAttack(int attack) {
+        this.attack = attack ;
+    }
+
+    public void setDeath(String death) {
+        this.death = death ;
+    }
+
     public void kunai(Character cha) {
         int damageKunai = (int) (attack * 1.2) ;
         if (hp > 0 && cha.hp > 0) {
