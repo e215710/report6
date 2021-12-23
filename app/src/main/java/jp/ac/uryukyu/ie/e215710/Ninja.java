@@ -39,6 +39,7 @@ public class Ninja extends Character {
     /**
      * Enemyへ螺旋丸で攻撃するメソッド
      * attack(攻撃力)の2倍のダメージを与えることが出来る
+     * チャクラがattack(攻撃力)の半分より少なかったら螺旋丸を出すことは出来ない
      * @param enemy //敵
      */
     public void rasengan(Enemy enemy) {
