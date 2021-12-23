@@ -14,8 +14,8 @@ public class NinjaTest {
     @Test
     void rasenganTest() {
         int defaultNinjaChakra = 4 ;
-        Ninja a = new Ninja("a", 30, defaultNinjaChakra, 10) ;
-        Enemy b = new Enemy("b", 30, 4, 10) ;
+        Ninja a = new Ninja("忍者a", 30, defaultNinjaChakra, 10) ;
+        Enemy b = new Enemy("敵b", 30, 4, 10) ;
         a.rasengan(b) ;
         b.syuriken(a) ;
         assertEquals(defaultNinjaChakra, a.getChakra()) ;
