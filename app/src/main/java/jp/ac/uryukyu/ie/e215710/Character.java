@@ -1,12 +1,27 @@
 package jp.ac.uryukyu.ie.e215710;
 
+/**
+ * Characterクラス
+ * String name ; //Characterの名前
+ * int hp ; //CharacterのHP
+ * int chakra ; //Characterのチャクラ
+ * int attack ; //Characterの攻撃力
+ * String death ; //Characterの生死状態
+ */
 public class Character {
-    String name ; //キャラクター名
-    int hp ; //HP
-    int chakra ; //チャクラ
-    int attack ; //攻撃力
-    String death ; //生死状態
+    String name ;
+    int hp ;
+    int chakra ;
+    int attack ;
+    String death ;
 
+    /**
+     * コンストラクタ
+     * @param name
+     * @param hp
+     * @param chakra
+     * @param attack
+     */
     Character(String name, int hp, int chakra, int attack) {
         this.name = name ;
         this.hp = hp ;
@@ -108,6 +123,11 @@ public class Character {
         this.death = death ;
     }
 
+    /**
+     * Characterへクナイで攻撃するメソッド
+     * attack(攻撃力)の1.2倍のダメージを与えることが出来る
+     * @param cha //攻撃対象
+     */
     public void kunai(Character cha) {
         int damageKunai = (int) (attack * 1.2) ;
         if (hp > 0 && cha.hp > 0) {
@@ -121,6 +141,11 @@ public class Character {
         }
     }
 
+    /**
+     * Charakterへ手裏剣で攻撃するメソッド
+     * attack(攻撃力)のダメージを与えることが出来る
+     * @param cha //攻撃対象
+     */
     public void syuriken(Character cha) {
         int damageShuriken = attack ;
         if (hp > 0 && cha.hp > 0) {
@@ -134,10 +159,20 @@ public class Character {
         }
     }
 
+    /**
+     * 自分自身に攻撃された時の、自分のHPが減るメソッド
+     * 詳細はNinja.javaとEnemy.javaに書いてある
+     * @param damageKunai
+     */
     public void injuredKunai(int damageKunai) {
         
     }
 
+    /**
+     * 自分自身に攻撃された時の、自分のHPが減るメソッド
+     * 詳細はNinja.javaとEnemy.javaに書いてある
+     * @param damageShuriken
+     */
     public void injuredShuriken(int damageShuriken) {
         
     }
