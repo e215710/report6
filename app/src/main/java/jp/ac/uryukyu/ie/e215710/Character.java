@@ -160,7 +160,7 @@ public class Character {
     }
 
     /**
-     * 自分自身に攻撃された時の、自分のHPが減るメソッド
+     * 自分自身にクナイで攻撃された時の、自分のHPが減るメソッド
      * 詳細はNinja.javaとEnemy.javaに書いてある
      * @param damageKunai
      */
@@ -169,7 +169,7 @@ public class Character {
     }
 
     /**
-     * 自分自身に攻撃された時の、自分のHPが減るメソッド
+     * 自分自身に手裏剣で攻撃された時の、自分のHPが減るメソッド
      * 詳細はNinja.javaとEnemy.javaに書いてある
      * @param damageShuriken
      */
