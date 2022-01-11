@@ -1,5 +1,4 @@
-import jp.ac.uryukyu.ie.e215710.Enemy;
-import jp.ac.uryukyu.ie.e215710.Ninja;
+import jp.ac.uryukyu.ie.e215710.*;
 
 public class Main {
     public static void main(String[]args) {
